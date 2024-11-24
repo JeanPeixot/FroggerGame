@@ -4,13 +4,15 @@ import java.util.Random;
 import com.jogamp.opengl.GL2;
 import com.jogamp.opengl.util.texture.Texture;
 import resourceLoader.ImageLoader;
+import resourceLoader.SoundLoader;
 
 public class Obstacle {
     private float x, y; 
     private final float width, height;
     private final float speed;
-    
+   
     private ImageLoader imageLoader; // Carregar a imagem
+    private SoundLoader cars;
 
     public Obstacle(float x, float y, float height, float minWidth, float maxWidth, float speed, ImageLoader imageLoader){
         this.y = y; 
@@ -21,6 +23,7 @@ public class Obstacle {
         this.width = minWidth + random.nextFloat() * (maxWidth - minWidth);
         this.speed = speed;
         this.imageLoader = imageLoader; // Receber o ImageLoader
+        this.cars = cars;
     }
     
     public void draw(GL2 gl){
