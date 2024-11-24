@@ -23,7 +23,7 @@ public class Obstacle {
         this.width = minWidth + random.nextFloat() * (maxWidth - minWidth);
         this.speed = speed;
         this.imageLoader = imageLoader; // Receber o ImageLoader
-        this.cars = cars;
+//        this.cars = cars;
     }
     
     public void draw(GL2 gl){
@@ -31,6 +31,10 @@ public class Obstacle {
     gl.glColor4f(1.0f, 1.0f, 1.0f, 1.0f); // Define a cor para branco (sem modulação)
     float size = 0.09f; // Define o tamanho do quadrado
 
+    
+    
+//    SoundLoader cars = new SoundLoader();
+//    cars.playSound(cars.getSongCar()); 
 
     ImageLoader imageLoaderCar = new ImageLoader(gl);
 

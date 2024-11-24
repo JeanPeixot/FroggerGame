@@ -27,9 +27,7 @@ public class Player {
     float size = 0.09f;
     if (this.x - size < -1.0f) {
         this.x = -1.0f + size;
-        
-        SoundLoader player = new SoundLoader();
-        player.playSound(player.getHopFrogger()); 
+    
     }
 }
 
@@ -39,8 +37,7 @@ public class Player {
         if (this.x + size > 1.0f) {
             this.x = 1.0f - size;
             
-        SoundLoader player = new SoundLoader();
-        player.playSound(player.getHopFrogger()); 
+       
         }
     }
 
@@ -50,8 +47,7 @@ public class Player {
         if (this.y + size > 1.0f) {
             this.y = 1.0f - size;
             
-        SoundLoader player = new SoundLoader();
-        player.playSound(player.getHopFrogger()); 
+       
             
         }
     }
@@ -61,9 +57,7 @@ public class Player {
         float size = 0.09f; 
         if (this.y - size < -1.0f) {
             this.y = -1.0f + size;
-            
-        SoundLoader player = new SoundLoader();
-        player.playSound(player.getHopFrogger()); 
+           
         
         }
     }
